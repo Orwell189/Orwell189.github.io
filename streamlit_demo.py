@@ -1,11 +1,14 @@
 
 import streamlit as st
 import matplotlib.pyplot as plt
+import datetime as dt
 import pandas as pd
 import matplotlib.pyplot as plt
+import time
 from pytdx.exhq import TdxExHq_API, TDXParams
 api = TdxExHq_API(heartbeat=True)
-
+import math
+import numpy as np
 
 future_info=pd.read_csv("select_list.csv",index_col=0)
 
@@ -17,7 +20,7 @@ def get_day_minute(name):
 
 
 option = st.selectbox(
-    '当日主力连续分钟线',
+    '请选择品种',
     set(future_info["name"].values) )
 
 st.write(option)
@@ -33,4 +36,5 @@ if len (market_data)>0:
     st.pyplot(fig)
 else:
     st.write("暂无数据")
-
+st.write("听首歌放松下")
+st.audio("460526429.mp3",format='audio/mp3',start_time=0)
