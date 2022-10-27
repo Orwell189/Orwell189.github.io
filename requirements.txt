@@ -1,8 +1,4 @@
 streamlit 
 matplotlib
-datetime
 pandas 
-time
-math
-numpy
 pytdx
