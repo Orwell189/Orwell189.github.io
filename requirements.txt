@@ -5,3 +5,4 @@ pandas
 time
 math
 numpy
+pytdx
