@@ -23,7 +23,7 @@ def get_day_minute(name):
     return market_data
 
 
-st.title("欢迎进入神经元策略系统")
+st.title("欢迎进入神经元策略系统(demo1)")
 st.write("算法结果仅供参考，依据算法结果进行决策风险自担")
 NQS_list=['神经元NQ_S1','神经元NQ_S2','神经元NQ_S3']
 option = st.sidebar.selectbox("查看算法详情",NQS_list)
