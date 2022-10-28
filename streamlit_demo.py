@@ -30,9 +30,9 @@ option = st.sidebar.selectbox("查看算法详情",NQS_list)
 
 if option in NQS_list:
     s_data=np.cumprod(  1+(  np.random.random(100)-0.3  )/100   )
-    fig = plt.figure(figsize=[10,5])          
+    plt.style.use("dark_background") 
+    fig = plt.figure(figsize=[10,5],facecolor="black")
     ax = fig.add_subplot(1,1,1) 
-    plt.style.use("dark_background")
     ax.plot(s_data)
     plt.grid()
     st.pyplot(fig)
@@ -41,3 +41,4 @@ if option in NQS_list:
 
 st.write("听首歌放松下")
 st.audio("460526429.mp3",format='audio/mp3',start_time=0)
+
