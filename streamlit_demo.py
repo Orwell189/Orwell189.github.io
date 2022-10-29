@@ -31,7 +31,7 @@ option = st.sidebar.selectbox("查看算法详情",NQS_list)
 if option in NQS_list:
     s_data=np.cumprod(  1+(  np.random.random(100)-0.3  )/100   )
     fig = plt.figure(figsize=[10,5],facecolor="red")
-    ax = fig.add_subplot(1,1,1,facecolor="gold") 
+    ax = fig.add_subplot(1,1,1,facecolor="black") 
     ax.plot(s_data)
     plt.grid()
     st.pyplot(fig)
