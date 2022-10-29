@@ -40,4 +40,5 @@ if option in NQS_list:
 
 st.write("听首歌放松下")
 st.audio("460526429.mp3",format='audio/mp3',start_time=6)
-st.snow()
+for i in 10:
+    st.snow()
