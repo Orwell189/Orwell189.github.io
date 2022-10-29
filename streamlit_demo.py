@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from pytdx.exhq import TdxExHq_API, TDXParams
-
+import time
 
 
 
@@ -40,5 +40,5 @@ if option in NQS_list:
 
 st.write("听首歌放松下")
 st.audio("460526429.mp3",format='audio/mp3',start_time=6)
-for i in 10:
+for i in range(10):
     st.snow()
