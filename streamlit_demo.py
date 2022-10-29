@@ -42,3 +42,4 @@ st.write("听首歌放松下")
 st.audio("460526429.mp3",format='audio/mp3',start_time=6)
 for i in range(10):
     st.snow()
+    time.sleep(5)
